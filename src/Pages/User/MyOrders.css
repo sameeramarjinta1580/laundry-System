@@ -1,0 +1,109 @@
+.orders-container {
+  padding: 30px;
+  font-family: 'Inter', sans-serif;
+  color: #1f2937;
+  height: 100vh ;
+}
+
+.orders-container h1 {
+  margin-bottom: 25px;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.no-orders {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+/* GRID LAYOUT */
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* CARD STYLING */
+.order-card {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-badges {
+  display: flex;
+  gap: 8px;
+}
+
+.payment, .status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+/* PAYMENT STATUS */
+.payment.PAID { background: #16a34a; }
+.payment.PENDING { background: #f59e0b; }
+.payment.FAILED { background: #dc2626; }
+
+/* ORDER STATUS */
+.status.PLACED { background: #3b82f6; }
+.status.PICKED { background: #8b5cf6; }
+.status.IN_PROGRESS { background: #fbbf24; color: #1f2937; }
+.status.DELIVERED { background: #10b981; }
+
+.branch-info {
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.order-items p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 5px 0;
+}
+
+.item-icon {
+  color: #2563eb;
+  font-size: 18px;
+}
+
+.total-price {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.cancel-btn {
+  margin-top: 10px;
+  background: #f87171;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.cancel-btn:hover {
+  background: #dc2626;
+  transform: scale(1.02);
+}

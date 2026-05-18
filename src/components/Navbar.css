@@ -1,0 +1,48 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+
+  /* Glass effect */
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1e293b;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #2563EB;
+}
+
+/* Buttons */
+.login-btn {
+  background: linear-gradient(135deg, #2563EB, #06B6D4);
+  padding: 8px 18px;
+  border-radius: 50px;
+  color: white !important;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  transform: scale(1.05);
+}
